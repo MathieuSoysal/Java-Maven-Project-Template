@@ -6,17 +6,18 @@
 
 Template for basic maven project with CI SonarCloud, QL and CD to automatically deploy docker image on release.
 
-## Configuration :
+## Use template
 
-- [ ] fix pom.xml
-- [ ] config SonarCloud
+To use this template, you just have to click on "use template" on the main page of this repository, or you can copy/paste this repository.
 
-### Fix pom.xml
+## Template configuration :
 
-*To guide you, a FIXME tag has been added to all lines to be edited.*
-
-### Config SonarCloud
-
-To config SonarCloud to your project you need to go on https://sonacloud.io
+- [ ] **Fix pom.xml**
+  - *To guide you, a FIXME tag has been added to all lines to be edited.*
+- [ ] **Config SonarCloud**
+  - To config SonarCloud to your project you need to go on https://sonacloud.io
 
 
+## Badges
+
+Don't forget to add your own badges to your readme 😉
