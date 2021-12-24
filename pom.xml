@@ -31,6 +31,11 @@
         <maven.surefire>3.0.0-M5</maven.surefire>
         <maven.jar>3.2.0</maven.jar>
         <maven.install>3.0.0-M1</maven.install>
+        
+        <!-- SonarCloud properties -->
+        <!-- FIXME replace with your SonarCloud organization on https://sonarcloud.io -->
+        <sonar.organization>mathieusoysal</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
