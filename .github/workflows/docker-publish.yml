@@ -38,4 +38,4 @@ jobs:
        -Djib.to.image=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
        -Djib.to.auth.username=${{ env.USERNAME }} \
        -Djib.to.auth.password=${{ env.PASSWORD }} \
-       -Djib.from.image=adoptopenjdk:{17}-jre
+       -Djib.from.image=adoptopenjdk:17-jre
