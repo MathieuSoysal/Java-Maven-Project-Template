@@ -8,7 +8,7 @@ Template for basic maven project with CI SonarCloud, QL and CD to automatically 
 
 ## Use template
 
-To use this template, you just have to click on "use template" on the main page of this repository, or you can copy/paste this repository.
+To use this template, you just have to click on "Use this template" on the main page of this repository, or you can copy/paste this repository.
 
 ## Template configuration :
 
