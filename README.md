@@ -15,4 +15,6 @@ Template for basic maven project with CI SonarCloud, QL and CD to automatically 
 
 ### Config SonarCloud
 
+To config SonarCloud to your project you need to go on https://sonacloud.io
+
 
