@@ -16,7 +16,7 @@ To use this template, you just have to click on "Use this template" on the main 
   - *To guide you, a FIXME tag has been added to all lines to be edited.*
 - [ ] **Config SonarCloud**
   - To config SonarCloud to your project you need to go on https://sonacloud.io
-  - Replace the file at /.github/workflows/sonar.yml with the yaml file at https://sonacloud.io and if your Java project is not on Java 11, edit this yaml file.
+  - Replace the file at /.github/workflows/sonar.yml with your own yaml file at https://sonacloud.io and if your Java project is not on Java 11, edit this yaml file.
 
 
 ## Badges
