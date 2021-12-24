@@ -13,10 +13,7 @@ Template for basic maven project with CI SonarCloud, QL and CD to automatically 
 
 ### Fix pom.xml
 
-**Before all, don't forget to customize the pom.xml to your maven project.**
-
 *To guide you, a FIXME tag has been added to all lines to be edited.*
-
 
 ### Config SonarCloud
 
