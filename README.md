@@ -10,7 +10,7 @@ Template for basic maven project with CI SonarCloud, QL and CD to automatically 
 
 **Before all, don't forget to customize the pom.xml to your maven project.**
 
-*To guide you, a FIXED tag has been added to all lines to be edited.*
+*To guide you, a FIXME tag has been added to all lines to be edited.*
 
 
 ### Config SonarCloud
