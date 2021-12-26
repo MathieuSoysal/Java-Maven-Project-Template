@@ -10,15 +10,15 @@ Template for basic maven project with CI SonarCloud, QL and CD to automatically 
 
 ## Use template
 
-To use this template, you just have to click on "Use this template" on the main page of this repository, or you can copy/paste this repository.
+To use this template, you just have to click on "Use this template" on the main page of this repository, or you can copy/paste it.
 
 ## Template configuration :
 
 - [ ] **Fix pom.xml**
   - *To guide you, a FIXME tag has been added to all lines to be edited.*
 - [ ] **Config SonarCloud**
-  - To config SonarCloud to your project you need to go on https://sonacloud.io
-  - Replace the file at /.github/workflows/sonar.yml with your own yaml file at https://sonacloud.io and if your Java project is not on Java 11, edit this yaml file.
+  - To configure SonarCloud to your project you need to go on https://sonacloud.io
+  - Replace the file at [/.github/workflows/sonar.yml](.github/workflows/sonar.yml) with your own yaml file at https://sonacloud.io and if your Java project is not on Java 11, edit this yaml file.
 
 
 ## Badges
