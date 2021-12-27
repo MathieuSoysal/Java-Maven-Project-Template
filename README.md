@@ -24,3 +24,8 @@ To use this template, you just have to click on "Use this template" on the main 
 ## Badges
 
 Don't forget to add your own SonarCloud badges to your readme 😉
+
+
+## Contact
+
+If you have any problems setting up CI, CD or other, do not hesitate to contact me at Mathieu.Soysal@etu.umontpellier.fr
