@@ -9,3 +9,4 @@ Shout out to our top contributors!
 - [simonardejr](https://api.github.com/users/simonardejr)
 - [cmeerbeek](https://api.github.com/users/cmeerbeek)
 - [tombenevides](https://api.github.com/users/tombenevides)
+- [theoboldalex](https://api.github.com/users/theoboldalex)
