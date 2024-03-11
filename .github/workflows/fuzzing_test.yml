@@ -1,0 +1,44 @@
+name: CI Fuzz
+# Set an action secret called "CI_FUZZ_API_TOKEN" with an API token
+# generated in CI Fuzz web interface.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  # The fuzzing server gRPC URL.
+  FUZZING_SERVER_ADDRESS: grpc.code-intelligence.com:443
+  # The fuzzing server HTTP URL.
+  WEB_APP_ADDRESS: https://app.code-intelligence.com
+  # Directory in which the repository will be cloned.
+  CHECKOUT_DIR: checkout-dir/
+  CIFUZZ_DOWNLOAD_URL: "https://github.com/CodeIntelligenceTesting/cifuzz/releases/latest/download/cifuzz_installer_linux_amd64"
+  CIFUZZ_INSTALL_DIR: ./cifuzz
+  FUZZING_ARTIFACT: fuzzing-artifact.tar.gz
+  PROJECT_NAME: "Kata-Datanumia"
+  TEST_PATH: "io.github.mathieusoysal.FuzzingTest"
+jobs:
+  fuzz_tests:
+    runs-on: ubuntu-latest
+    # Configure your build environment here
+    # container: example/docker_image
+    steps:
+      - id: checkout
+        name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+          cache: maven
+      - id: cifuzz
+        name: Install CI Fuzz
+        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/CodeIntelligenceTesting/cifuzz/main/install.sh)"
+      - name: run CIFuzz
+        run: |
+          CIFUZZ_API_TOKEN=${{ secrets.CI_FUZZ_API_TOKEN}} cifuzz remote-run --server ${{ env.WEB_APP_ADDRESS }} ${{ env.TEST_PATH }}
